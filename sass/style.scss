@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'visuelt pro', sans-serif;
+    font-family: 'tahoma', sans-serif;
 }
 body{
     background-color: #333;
@@ -59,4 +59,31 @@ main{
 
 .space-between{
     justify-content: space-between;
+}
+
+.bg-success{
+    background-color: #02b872;
+    color: #fff;
+}
+
+.search{
+    outline: solid #464845 1px;
+    input{
+        border: none;
+        background-color: #252525;
+        width: 100%;
+        font-size: medium;
+        padding: 20px 20px;
+        color: #fff;
+        outline: none;
+    }
+    button{
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #fff;
+        margin: 0px 2px 0px 0px;
+        border: none;
+        outline: none;
+
+    }
 }
