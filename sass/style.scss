@@ -44,22 +44,33 @@ header{
 
 aside{
     min-width: 300px;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 100px);
     background-color: #252525;
     margin: 5px 0px 5px 5px;
     border: solid #464845 1px;
 }
 main{
     width: 100%;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 100px);
     background-color: #252525;
     margin: 5px;
     border: solid #464845 1px;
+    overflow-y: scroll;
 }
 
 .space-between{
     justify-content: space-between;
 }
+.justify-center{
+    justify-content: center;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.space-around{
+    justify-content: space-around;
+}
+
 
 .bg-success{
     background-color: #02b872;
@@ -87,3 +98,51 @@ main{
 
     }
 }
+
+.products{
+    padding: 10px;
+    flex-wrap: wrap;
+    
+    .product{
+        width: 200px;
+        background-color: #333333;
+        color: #fff;
+        padding: 10px;
+        border: solid #595E57 1px;
+        text-align: center;
+        margin: 4px 4px;
+        &:hover{
+            background-color: #484E55;
+            cursor: pointer;
+        }
+        img{
+            width: 150px;
+        }
+        p{
+            margin: 0;
+            padding: 4px;
+        }
+
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #21a5f1; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #21a5f1; 
+  }
+
